@@ -1,13 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-  </head>
-  <body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
-  </body>
+    <header class="max-w-5xl mx-auto">
+        <ul id="main-menu" class=" hidden md:flex justify-end space-x-5 pt-4 ">
+            <li class="hover:text-red-500"><a href="">Words</a></li>
+            <li class="hover:text-red-500"><a href="">Blog</a></li>
+            <li class="hover:text-red-500"><a href="">Contact</a></li>
+        </ul>
+        <button id="button" class="text-2xl inline-block md:hidden"><ion-icon name="menu"></ion-icon></button>
+    </header>
+    <div class="banner max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 pt-36 text-center md:text-left px-5">
+        <div class="col-span-2 space-y-7 order-2 md:order-1">
+            <h1 class="text-5xl text-center md:text-left font-bold pb-5 ">Hi, I am John, <br>
+                Creative Technologist</h1>
+            <p class=" inline-block text-lg font-normal pb-5 ">Amet minim mollit non deserunt ullamco est sit aliqua
+                dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                nostrud amet.</p>
+            <button class="py-3 bg-[#FF6464] px-7 font-medium rounded-sm text-white  ">Download Resume</button>
+        </div>
+        <div class="col-span-1 order-1 md:order-2">
+            <img class=" p-5 " src="img/Ellipse 1.png" alt="">
+        </div>
+    </div>
+    <div class="w-full h-full bg-[#EDF7FA] mt-16 mx-auto px-5 py-5">
+        <div class="Recent posts max-w-5xl mx-auto  h-full">
+            <div class="flex justify-between py-10">
+                <div class="font-bold">
+                    <a href="">Recent posts </a>
+                </div>
+                <div class="text-[#00A8CC] hover:underline">
+                    <a href="">View all</a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-2   ">
+                <div class=" border mx-auto bg-white p-5 block space-y-7   ">
+                    <h1 class="text-2xl font-bold">Making a design system from scratch</h1>
+                    <div><span>12 Feb 2020</span> <span class="px-5">|</span> <span>Design, Pattern</span></div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <div class=" border mx-auto bg-white p-5 block space-y-7">
+                    <h1 class="text-2xl font-bold">Making a design system from scratch</h1>
+                    <div><span>12 Feb 2020</span> <span class="px-5">|</span> <span>Design, Pattern</span></div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="Featured works px-5">
+        <div class="max-w-5xl mx-auto">
+            <div class="py-5">
+                Featured works
+            </div>
+            <div class="grid md:grid-cols-[246px,auto] gap-6 ">
+                <div>
+                    <img class="w-full" src="img/Rectangle 30.jpg" alt="">
+                </div>
+                <div class="space-y-5">
+                    <h3 class="text-4xl font-medium">Designing Dashboards</h3>
+                    <div class="space-x-8">
+                        <span class="border px-2 rounded-2xl bg-black text-white">2020</span> <span
+                            class="text-lg text-[#8695A4]">Dashboard</span>
+                    </div>
+
+                    <p class="text-lg pt-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+                <!-- end -->
+            </div>
+            <div class="py-5">
+                <hr>
+            </div>
+            <div class="grid grid-cols-1  md:grid-cols-[246px,auto] gap-6">
+                <div>
+                    <img class="w-full" src="img/Rectangle 32.jpg" alt="">
+                </div>
+                <div class="space-y-5">
+                    <h3 class="text-4xl font-medium">Vibrant Portraits of 2020</h3>
+                    <div class="space-x-8">
+                        <span class="border px-2 rounded-2xl bg-black text-white">2020</span> <span
+                            class="text-lg text-[#8695A4]">Illustration</span>
+                    </div>
+
+                    <p class="text-lg pt-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+                <!-- end -->
+            </div>
+            <div class="py-5">
+                <hr>
+            </div>
+            <div class="grid grid-cols-1  md:grid-cols-[246px,auto] gap-6">
+                <div>
+                    <img class="w-full" src="img/Rectangle 34.jpg" alt="">
+                </div>
+                <div class="space-y-5">
+                    <h3 class="text-4xl font-medium">36 Days of Malayalam type</h3>
+                    <div class="space-x-8">
+                        <span class="border px-2 rounded-2xl bg-black text-white">2020</span> <span
+                            class="text-lg text-[#8695A4]   ">Typography</span>
+                    </div>
+
+                    <p class="text-lg  pt-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+                <!-- end -->
+            </div>
+            <div class="py-5">
+                <hr>
+            </div>
+
+        </div>
+    </div>
+    <footer class="py-20 pt-40 md:pt-24">
+        <ul class=" flex justify-center space-x-5 ">
+            <li><a href=""><img src="img/fb.svg" alt=""></a></li>
+            <li><a href=""><img src="img/insta.svg" alt=""></a></li>
+            <li><a href=""><img src="img/Linkedin.svg" alt=""></a></li>
+            <li><a href=""><img src="img/Group.svg" alt=""></a></li>
+        </ul>
+        <p class=" text-center pt-7">Copyright ©2020 All rights reserved </p>
+    </footer>
+
+</body>
+
 </html>
