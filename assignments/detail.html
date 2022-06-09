@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header class="max-w-5xl mx-auto">
-        <ul class="flex justify-end space-x-5 pt-4 ">
-            <li class="hover:text-red-500"><a href="">Words</a></li>
-            <li class="hover:text-red-500"><a href="">Blog</a></li>
-            <li class="hover:text-red-500"><a href="">Contact</a></li>
+    <script type="module" src="/main.js"></script>
+    <header class="max-w-5xl mx-auto px-5  pt-16">
+        <button onclick="handleClick()" class="text-2xl flex md:hidden"><ion-icon name="menu"></ion-icon></button>
+        <ul id="main-menu" class="justify-end md:flex   hidden pt-4 order-2 ">
+            <li class="hover:text-red-500 pl-5"><a href="">Words</a></li>
+            <li class="hover:text-red-500 pl-5"><a href="">Blog</a></li>
+            <li class="hover:text-red-500 pl-5"><a href="">Contact</a></li>
         </ul>
     </header>
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-5xl mx-auto text-center md:text-left px-5">
         <h3 class="font-bold text-4xl pt-20 pb-10">Designing Dashboards with usability in mind</h3>
         <span class="border px-1 bg-[#FF7C7C] rounded-2xl text-white mr-7">2020</span> <span>Dashboard, User Experience Design</span>
         <p class="pt-7">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -30,7 +34,7 @@
         <img class="pb-5 w-full pt-7" src="img/Rectangle 5.png" alt="">
         <img class="w-full" src="img/Rectangle 6.png" alt="">
     </div>
-    <footer class="py-20 pt-24">
+    <footer class="py-20 pt-40 md:pt-24">
         <ul class=" flex justify-center space-x-5">
             <li><a href=""><img src="img/fb.svg" alt=""></a></li>
             <li><a href=""><img src="img/insta.svg" alt=""></a></li>
